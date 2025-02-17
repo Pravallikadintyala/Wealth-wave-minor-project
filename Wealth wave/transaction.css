@@ -1,0 +1,139 @@
+
+/* Navbar Styles */
+.navbar {
+    background-color:white;
+    padding: 20px 20px; /* Add padding for spacing */
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: right; /* Align vertically */
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width of the viewport */
+    
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    gap: 20px; /* Add space between items */
+  }
+  
+  .navbar ul li {
+    display: inline; /* Make each list item inline */
+  }
+  
+  .navbar ul li a {
+    color: #090a60; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size for the links */
+    font-weight: 500; /* Slightly bold text */
+    padding: 8px 15px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Transaction List Section */
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1{
+
+   background-color: #212181;
+   color: white;
+   padding: 10px;
+   margin: 0; /* Remove default margin for h1 */
+   width: 100%; /* Make it span the full width */
+   border-bottom: 5px solid #2c888b; /* Add a border below */
+   text-align: center; /* Center-align the text (optional) */
+}
+  
+  
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #transactionList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #transactionList li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  #transactionList li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .name h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .amount.income {
+    color: #4caf50;
+  }
+  
+  .amount.expense {
+    color: #f44336;
+  }
+  
+  .action svg {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: #999;
+    transition: color 0.3s;
+  }
+  
+  .action svg:hover {
+    color: #f44336;
+  }
+  
+  /* Status Message */
+  #status {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    section {
+      padding: 15px;
+      margin: 10px;
+    }
+  }
+  
